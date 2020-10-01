@@ -11,7 +11,7 @@ public class Sierpinski {
     // Height of an equilateral triangle whose sides are of the specified length. 
     public static double height(double length) {
         return Math.sqrt(3)*length*0.5;
-	// WRITE YOUR CODE HERE
+	
     }
 
     // Draws a filled equilateral triangle whose bottom vertex is (x, y) 
@@ -30,7 +30,7 @@ public class Sierpinski {
         xPos[2] = topRightX;
         yPos[2] = topRightY;
         StdDraw.filledPolygon(xPos,yPos);
-	// WRITE YOUR CODE HERE
+	
     }
 
     // Draws a Sierpinski triangle of order n, such that the largest filled 
@@ -43,7 +43,7 @@ public class Sierpinski {
         sierpinski(n-1,x-length/2,y,length/2);
         sierpinski(n-1,x+length/2,y,length/2);
         sierpinski(n-1,x,height(length)+y,length/2);
-	// WRITE YOUR CODE HERE
+	
     }
 
     // Takes an integer command-line argument n; 
@@ -57,6 +57,6 @@ public class Sierpinski {
         StdDraw.polygon(x,y);
         sierpinski(n,0.5,0,0.5);
 
-	// WRITE YOUR CODE HERE 
+	
     }
 }
